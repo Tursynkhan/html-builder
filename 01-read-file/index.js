@@ -8,5 +8,5 @@ const readStream = fs.createReadStream(filePath, 'utf8');
 readStream.pipe(process.stdout);
 
 readStream.on('error', (err) => {
-    console.error('Error reading file:', err.message);
+  console.error('Error reading file:', err.message);
 });
